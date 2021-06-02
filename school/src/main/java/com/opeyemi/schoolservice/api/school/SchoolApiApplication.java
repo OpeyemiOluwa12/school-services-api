@@ -1,13 +1,13 @@
-package com.opeyemi.schoolservices.api;
+package com.opeyemi.schoolservice.api.school;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApiApplication {
+public class SchoolApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApiApplication.class, args);
+		SpringApplication.run(SchoolApiApplication.class, args);
 	}
 
 }
