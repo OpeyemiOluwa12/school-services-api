@@ -1,4 +1,4 @@
-package com.opeyemi.schoolservices.api.model;
+package com.opeyemi.schoolservices.api.configuration.model;
 
 import java.util.List;
 
