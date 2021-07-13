@@ -1,9 +1,6 @@
 package com.opeyemi.schoolservices.api.configuration.model.utils;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
+import javax.persistence.*;
 
 @Entity(name = "state")
 public class State {
@@ -14,6 +11,7 @@ public class State {
 
     private String name;
 
+    @ManyToOne
     @JoinColumn(name = "country_id")
     private Country country;
 }
