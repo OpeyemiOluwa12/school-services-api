@@ -1,8 +1,7 @@
 package com.opeyemi.schoolservices.api.configuration.model.utils;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "country")
 public class Country {
@@ -12,4 +11,6 @@ public class Country {
     private Integer id;
     private String name;
 
+    @OneToMany(mappedBy = "country", cascade = CascadeType.ALL)
+    private List<State> states;
 }

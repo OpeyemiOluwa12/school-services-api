@@ -1,8 +1,7 @@
 package com.opeyemi.schoolservices.api.configuration.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "subject")
 public class Subject {
@@ -12,5 +11,8 @@ public class Subject {
     Integer id;
 
     String name;
+
+    @OneToMany(mappedBy = "subject", cascade = CascadeType.ALL)
+    private List<SubjectClass> subjectClasses;
 
 }
